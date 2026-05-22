@@ -1,0 +1,71 @@
+:root {
+  --grey-color: rgb(181, 181, 181);
+  --background-color: rgb(255, 255, 255);
+  --accent-color: rgb(113, 198, 255);
+  --dark-accent: rgb(35, 83, 116);
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  -ms-touch-action: none;
+  display: flex;
+  flex-direction: column;
+  touch-action: pan-y;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  font-family: "poppins-regular";
+  background: #d8d8d8;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+}
+.app-body {
+  font-size: calc((1vw + 1vh) * 1.4);
+}
+@media (orientation: landscape) {
+  .app-body {
+    font-size: calc((1vw + 1vh) * 1);
+    margin: 1em 13em;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .app-body {
+    padding: 0 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .app-body {
+    font-size: calc((1vw + 1vh) * 1.2);
+    margin: 1em 7em;
+  }
+}
+@media (min-aspect-ratio: 4/5) and (max-aspect-ratio: 5/4) and (orientation: landscape) {
+  .app-body {
+    margin: 1em 6em;
+  }
+
+}

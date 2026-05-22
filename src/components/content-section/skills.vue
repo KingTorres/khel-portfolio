@@ -1,0 +1,156 @@
+<script setup lang="ts">
+import { ref, watch } from "vue"
+import { useWindowSize } from "@vueuse/core"
+
+const chartRef = ref()
+const { width, height } = useWindowSize()
+ const chartOptions = {
+    chart: {
+      type: "radar",
+      toolbar: {
+        show: false
+      }
+    },
+    markers: {
+      size: 0
+    },
+    tooltip: {
+      enabled: false
+    },
+    xaxis: {
+      categories: ["Responsiveness" , "Frontend", "Layout",  "Backend", "Graphics"]
+    }
+  }
+
+  const series = [
+    {
+      name: "Statistic",
+      data: [95, 65, 98, 20, 80]
+    }
+  ]
+
+  watch([width, height], () => {
+    chartRef.value?.resize()
+  })
+</script>
+<template>
+  <section id="skill">
+    <div class="section-title">Skills</div>
+    <div class="tools">
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/gitlab.webp" alt="gitlab">
+        </div>
+        <div class="label">Gitlab</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/github.webp" alt="github">
+        </div>
+        <div class="label">Github</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/vue.webp" alt="vue">
+        </div>
+        <div class="label">VueJS</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/node.webp" alt="node">
+        </div>
+        <div class="label">NodeJS</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/photoshop.webp" alt="photoshop">
+        </div>
+        <div class="label">Photoshop</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/html5.webp" alt="html5">
+        </div>
+        <div class="label">html5</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/css3.webp" alt="css3">
+        </div>
+        <div class="label">css3</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/typescript.webp" alt="typescript">
+        </div>
+        <div class="label">Typescript</div>
+      </div>
+    </div>
+    <div class="section-title">WebDev Statistic</div>
+    <div class="chart-wrapper">
+      <apexchart
+        type="radar"
+        width="100%"
+        height="100%"
+        :options="chartOptions"
+        :series="series"
+      />
+    </div>
+  </section>
+</template>
+<style scoped>
+.tools {
+  background: #f0f0f0;
+  padding: 1em .5em;
+  border-radius: 0.5em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0.7em;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.tools > .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+.tools > .item > .icon {
+  width: 80%;
+  aspect-ratio: 1/1;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools > .item > .icon > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.chart-wrapper {
+  width: 80vw;
+  height: 80vw;
+  margin: auto;
+  margin-top: -2.5em;
+}
+::v-deep(.vue-apexcharts),
+::v-deep(.apexcharts-canvas > svg ) {
+  width: 100% !important;
+}
+@media (orientation: landscape) {
+  .tools {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .chart-wrapper {
+    height: 30vw;
+    width: 30vw;
+  }
+}
+</style>
