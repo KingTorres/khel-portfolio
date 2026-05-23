@@ -1,4 +1,12 @@
 <script setup lang="ts">
+const copyNumber = async (value: any) => {
+  try {
+    await navigator.clipboard.writeText(value)
+    alert('Copied')
+  } catch (err) {
+    alert('Failed to copy:'+ err)
+  }
+}
 </script>
 <template>
   <section id="references">
@@ -8,20 +16,20 @@
         <div class="name">Peter Ian Munsayac</div>
         <div class="position">Manager</div>
         <div class="department">Research and Development, Megabet</div>
-        <div class="contact">09153120303</div>
+        <div class="contact" @click="copyNumber('09153120303')">09153120303</div>
       </div>
       
       <div class="list-item">
         <div class="name">Gideon Bardellas</div>
         <div class="position">Senior Backend Developer</div>
         <div class="department">Research and Development, Megabet</div>
-        <div class="contact">09693010206</div>
+        <div class="contact" @click="copyNumber('09693010206')">09693010206</div>
       </div>
       <div class="list-item">
         <div class="name">Yra V. Sabordo</div>
         <div class="position">HR Head</div>
         <div class="department">Megabet</div>
-        <div class="contact">09268741475</div>
+        <div class="contact" @click="copyNumber('09268741475')">09268741475</div>
       </div>
     </div>
   </section>
@@ -63,15 +71,21 @@
 .list-item > .contact {
   font-size: 0.8em;
   letter-spacing: 0.05em;
+  color: blue;
+  margin-top: 0.3em;
+  cursor: pointer;
 }
 @media (orientation: landscape) {
   .reference-list {
     flex-direction: row;
-    padding: 1em;
+    padding: 0;
+    background: transparent;
   }
   .list-item {
     width: 100%;
-    font-size: 0.65em;
+    font-size: 0.7em;
+    background: #f1f1f1;
+    color: #636363;
   }
 }
 </style>

@@ -284,7 +284,6 @@
     font-size: 0.75em;
   }
   .intro-button button {
-    font-size: 1.3;
     padding: 0.7em 0;
   }
   .about-body {
