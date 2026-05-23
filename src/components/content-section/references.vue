@@ -2,7 +2,7 @@
 const copyNumber = async (value: any) => {
   try {
     await navigator.clipboard.writeText(value)
-    alert('Copied')
+    alert('Contact Copied')
   } catch (err) {
     alert('Failed to copy:'+ err)
   }
