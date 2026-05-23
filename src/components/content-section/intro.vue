@@ -40,7 +40,7 @@
     }
   }
   function DownloadCV() {
-    const url = "https://docs.google.com/document/d/1ZgGKFfqN3Rw7P3lGLzUN2GiKwCwBgHql/edit?usp=drive_link&ouid=112479197233098866898&rtpof=true&sd=true";
+    const url = "https://drive.google.com/file/d/1RWbHvVRUVih2mNRGhglUFcS4wgaAF437/view?usp=sharing";
     window.open(url, "_blank");
   }
 </script>
