@@ -1,6 +1,6 @@
 <script setup lang="ts">
  function gotoMegabet() {
-    window.location.href = 'https://megabet.com'
+    window.location.href = 'https://megabet-paradise.com/'
  }
 </script>
 <template>

@@ -39,6 +39,10 @@
       alert('Failed to copy:'+ err)
     }
   }
+  function DownloadCV() {
+    const url = "https://docs.google.com/document/d/1ZgGKFfqN3Rw7P3lGLzUN2GiKwCwBgHql/edit?usp=drive_link&ouid=112479197233098866898&rtpof=true&sd=true";
+    window.open(url, "_blank");
+  }
 </script>
 <template>
   <section id="home">
@@ -53,7 +57,7 @@
           <div v-if="IS_LANDSCAPE">Reactive Layout (vue)</div>
         </div>
         <div class="intro-button">
-          <button><span>CV</span><download/></button>
+          <button @click="DownloadCV"><span>CV</span><download/></button>
           <button @click="copyEmail"><span>Email</span><clipboard/></button>
         </div>
       </div>
@@ -152,9 +156,13 @@
   padding: .4em 0;
   border-radius: 0.3em;
   background: #ffffff;
-  color: var(--accent-color);
+  color: #ffffff;
   box-shadow: 0em 0.1em .2em #00000056;
   justify-content: center;
+  background: linear-gradient(to right, blue, rgb(170, 2, 100));
+}
+.intro-button button:last-child {
+  background: linear-gradient(to right, #4b4bff, #95c6e0);
 }
 .intro-button button svg {
   height: 1em;
