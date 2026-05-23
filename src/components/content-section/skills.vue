@@ -86,7 +86,7 @@ const { width, height } = useWindowSize()
         <div class="label">Typescript</div>
       </div>
     </div>
-    <div class="section-title">WebDev Statistic</div>
+    <div class="section-title">Web Development Statistic</div>
     <div class="chart-wrapper">
       <apexchart
         type="radar"
