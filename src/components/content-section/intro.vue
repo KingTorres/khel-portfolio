@@ -43,6 +43,14 @@
     const url = "https://drive.google.com/file/d/1RWbHvVRUVih2mNRGhglUFcS4wgaAF437/view?usp=sharing";
     window.open(url, "_blank");
   }
+  const copyNumber = async (value: any) => {
+    try {
+      await navigator.clipboard.writeText(value)
+      alert('Contact Copied')
+    } catch (err) {
+      alert('Failed to copy:'+ err)
+    }
+  }
 </script>
 <template>
   <section id="home">
@@ -67,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="about-body">
+    <div class="about-body" @click="copyNumber('09493923708')">
       <div class="item" v-for="(item, index) in Details.about" :key="index">
         <div class="label">{{ Object.keys(item)[0] }}:</div>
         <div class="data">{{ Object.values(item)[0] }}</div>
@@ -129,6 +137,7 @@
   width: 100%;
   margin: 0.5em 0;
   margin-bottom: 0.2em;
+  text-wrap: nowrap;
 }
 .intro-body .description {
   width: 100%;
@@ -214,6 +223,11 @@
   text-transform: capitalize;
   min-width: 6.5em;
   opacity: 0.7;
+  font-family: "poppins-medium";
+  color: #828282;
+}
+.about-body > .item:first-child > .data {
+  color: blue;
 }
 .about-body > .item > .data {
   overflow-wrap: break-word;
