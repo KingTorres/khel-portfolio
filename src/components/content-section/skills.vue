@@ -25,7 +25,7 @@ const { width, height } = useWindowSize()
   const series = [
     {
       name: "Statistic",
-      data: [95, 65, 98, 20, 80]
+      data: [95, 75, 98, 40, 80]
     }
   ]
 
@@ -99,6 +99,13 @@ const { width, height } = useWindowSize()
   </section>
 </template>
 <style scoped>
+section#skill {
+  background: linear-gradient(45deg, #00086d, #962121);
+  padding-bottom: 0;
+}
+section#skill .section-title {
+  background: transparent;
+}
 .tools {
   background: #f0f0f0;
   padding: 2em 1em;
@@ -112,7 +119,7 @@ const { width, height } = useWindowSize()
   margin-bottom: 1em;
   gap: 1em;
   color: #ffffff;
-  background: linear-gradient(to bottom, rgb(35, 35, 35), #2f80dc);
+  background: linear-gradient(to bottom, #2323234d, #2f80dc4b);
 }
 .tools > .item {
   width: 100%;

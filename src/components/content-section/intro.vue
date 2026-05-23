@@ -59,10 +59,10 @@
       <div class="details">
         <div class="greetings">Hi, I'm Michael Torres</div>
         <div class="description">
-          <div>Layout and Graphics</div>
-          <div>Responsive Design</div>
-          <div v-if="IS_LANDSCAPE">Mobile, Desktop, etc.</div>
-          <div v-if="IS_LANDSCAPE">Reactive Layout (vue)</div>
+          <div>Frontend & Graphics</div>
+          <div>Responsive Web Designer</div>
+          <div v-if="IS_LANDSCAPE">Layout Designer</div>
+          <div v-if="IS_LANDSCAPE">Reactive UI/UX</div>
         </div>
         <div class="intro-button">
           <button @click="DownloadCV"><span>CV</span><download/></button>
