@@ -121,7 +121,7 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   gap: 1em;
-  align-items: center;
+  align-items: flex-end;
 }
 .intro-body .greetings {
   font-size: 1.1em;
@@ -153,7 +153,7 @@
   display: flex;
   font-size: inherit;
   gap: .5em;
-  padding: .4em 0;
+  padding: .3em 0;
   border-radius: 0.3em;
   background: #ffffff;
   color: #ffffff;
@@ -174,8 +174,8 @@
   gap: 0.2em;
 }
 .intro-body .photo {
-  width: 30vw;
-  height: 30vw;
+  width: 31.5vw;
+  height: 31.5vw;
   aspect-ratio: 1/1;
   border: 0.1em solid #dfdfdf;
   border-radius: 50%;
