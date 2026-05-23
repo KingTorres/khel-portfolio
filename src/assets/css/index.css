@@ -50,6 +50,8 @@ button {
     font-size: calc((1vw + 1vh) * 1);
     margin: 1em 13em;
     position: relative;
+    display: flex;
+    justify-content: right;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
