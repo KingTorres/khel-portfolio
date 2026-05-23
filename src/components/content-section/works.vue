@@ -47,7 +47,7 @@
   background: #f0f0f0;
   padding: 1.5em 1em;
   margin: 0.5em 0;
-  border-radius: 0.5em;
+  border-radius: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.8em;

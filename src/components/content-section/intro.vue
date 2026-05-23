@@ -46,10 +46,10 @@
 </script>
 <template>
   <section id="home">
-    <div class="section-title">Web Designer</div>
+    <div class="section-title">Frontend / Web Designer</div>
     <div class="intro-body">
-      <div>
-        <div class="greetings">I'm Michael Torres</div>
+      <div class="details">
+        <div class="greetings">Hi, I'm Michael Torres</div>
         <div class="description">
           <div>Layout and Graphics</div>
           <div>Responsive Design</div>
@@ -58,7 +58,7 @@
         </div>
         <div class="intro-button">
           <button @click="DownloadCV"><span>CV</span><download/></button>
-          <button @click="copyEmail"><span>Email</span><clipboard/></button>
+          <button @click="copyEmail"><span>EMAIL</span><clipboard/></button>
         </div>
       </div>
       <div class="photo">
@@ -133,8 +133,8 @@
 .intro-body .description {
   width: 100%;
   font-size: .7em;
-  padding: 0.5em 1.2em;
-  border-radius: 0.6em;
+  padding: 1.2em;
+  border-radius: 1em;
   background: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -168,9 +168,14 @@
   height: 1em;
   width: auto;
 }
+.intro-body .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
 .intro-body .photo {
-  width: 28vw;
-  height: 28vw;
+  width: 30vw;
+  height: 30vw;
   aspect-ratio: 1/1;
   border: 0.1em solid #dfdfdf;
   border-radius: 50%;
@@ -194,10 +199,10 @@
 .about-body {
   background: #f0f0f0;
   margin: 1.2em 0;
-  padding: 1.5em 1em;
+  padding: 1.5em;
   width: 100%;
   font-size: 0.8em;
-  border-radius: 0.5em;
+  border-radius: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -221,7 +226,7 @@
   padding: 0.8em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
 }
 .education-body > .item {
   display: flex;
@@ -257,8 +262,8 @@
     gap: 1.5em;
   }
   .intro-body .photo {
-    height: 10vw;
-    width: 10vw;
+    height: 11.5vw;
+    width: 11.5vw;
   }
   .intro-body .greetings {
     font-size: 1.2em;
@@ -279,7 +284,8 @@
     font-size: 0.75em;
   }
   .intro-button button {
-    padding: 0.6em 0;
+    font-size: 1.3;
+    padding: 0.7em 0;
   }
   .about-body {
     font-size: 0.7em;

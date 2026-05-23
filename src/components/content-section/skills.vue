@@ -101,15 +101,18 @@ const { width, height } = useWindowSize()
 <style scoped>
 .tools {
   background: #f0f0f0;
-  padding: 1em .5em;
-  border-radius: 0.5em;
+  padding: 2em 1em;
+  border-radius: 1em;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  font-size: 0.7em;
+  font-size: 0.6em;
   text-align: center;
   justify-content: center;
   margin-bottom: 1em;
+  gap: 1em;
+  color: #ffffff;
+  background: linear-gradient(to bottom, rgb(35, 35, 35), #2f80dc);
 }
 .tools > .item {
   width: 100%;

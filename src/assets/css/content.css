@@ -28,6 +28,8 @@ section {
   padding: 0.2em .5em;
   border-radius: 1em;
   background: #ffffff;
+  margin-top: 0.5em;
+  color: var(--accent-color);
 }
 
 ::v-deep(section .section-title::before) {
@@ -36,7 +38,7 @@ section {
   width: .5em;
   height: .5em;
   border-radius: 50%;
-  background: var(--grey-color);
+  background: var(--accent-color);
 }
 @media (orientation: landscape) {
   .content {
@@ -46,6 +48,6 @@ section {
     border-radius: 1em;
     font-size: 0.8em;
     scroll-margin-top: 3vh;
-    padding: 1.5em 2em;
+    padding: 1.5em 5em;
   }
 }
