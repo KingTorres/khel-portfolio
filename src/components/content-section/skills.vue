@@ -57,9 +57,27 @@ const { width, height } = useWindowSize()
       </div>
       <div class="item">
         <div class="icon">
+          <img src="@/assets/img/logo/react.webp" alt="reactjs">
+        </div>
+        <div class="label">ReactJS</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/next.webp" alt="nextjs">
+        </div>
+        <div class="label">NextJS</div>
+      </div>
+      <div class="item">
+        <div class="icon">
           <img src="@/assets/img/logo/node.webp" alt="node">
         </div>
         <div class="label">NodeJS</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="@/assets/img/logo/typescript.webp" alt="typescript">
+        </div>
+        <div class="label">Typescript</div>
       </div>
       <div class="item">
         <div class="icon">
@@ -78,12 +96,6 @@ const { width, height } = useWindowSize()
           <img src="@/assets/img/logo/css3.webp" alt="css3">
         </div>
         <div class="label">css3</div>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <img src="@/assets/img/logo/typescript.webp" alt="typescript">
-        </div>
-        <div class="label">Typescript</div>
       </div>
     </div>
     <div class="section-title">Web Development Statistic</div>
@@ -112,7 +124,7 @@ section#skill .section-title {
   border-radius: 1em;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   font-size: 0.6em;
   text-align: center;
   justify-content: center;
@@ -156,7 +168,7 @@ section#skill .section-title {
 }
 @media (orientation: landscape) {
   .tools {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
   }
   .chart-wrapper {
     height: 30vw;
