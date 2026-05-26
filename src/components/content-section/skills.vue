@@ -58,12 +58,14 @@ const { width, height } = useWindowSize()
       <div class="item">
         <div class="icon">
           <img src="@/assets/img/logo/react.webp" alt="reactjs">
+          <div class="remarks">Entry</div>
         </div>
         <div class="label">ReactJS</div>
       </div>
       <div class="item">
         <div class="icon">
           <img src="@/assets/img/logo/next.webp" alt="nextjs">
+          <div class="remarks">Entry</div>
         </div>
         <div class="label">NextJS</div>
       </div>
@@ -150,6 +152,17 @@ section#skill .section-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.tools > .item > .icon .remarks {
+  position: absolute;
+  background: rgb(101, 101, 101);
+  top: -1em;
+  right: -1em;
+  font-size: 0.7em;
+  border-radius: 0.5em;
+  padding: 0 0.5em;
+
 }
 .tools > .item > .icon > img {
   width: 100%;
