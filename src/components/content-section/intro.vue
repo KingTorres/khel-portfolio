@@ -174,7 +174,7 @@
   font-size: inherit;
   gap: .5em;
   padding: .3em 0;
-  border-radius: 0.3em;
+  border-radius: 2em;
   background: #ffffff;
   color: #ffffff;
   box-shadow: 0em 0.1em .2em #00000056;

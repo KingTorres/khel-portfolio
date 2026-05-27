@@ -42,9 +42,10 @@ function project() {
   margin: 2em auto;
   margin-bottom: 2.5em;
   display: flex;
-  gap: 5em;
-  padding: 3em;
-  border-radius: 2.5em;
+  gap: 6em;
+  padding: 3em 6em;
+  padding-bottom: 2.5em;
+  border-radius: 10em;
   box-shadow: 0.5em 0.4em .8em #00000056;
   overflow: hidden;
   z-index: 1;
@@ -59,8 +60,8 @@ function project() {
   top: 0;
   left: 0;
   z-index: -1;
-  backdrop-filter: blur(1em);
-  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(2em);
+  -webkit-backdrop-filter: blur(2em);
   pointer-events: none;
 }
 .navigation > button {
