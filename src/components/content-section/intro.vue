@@ -261,7 +261,7 @@
   gap: 1em;
   padding: 1em;
   border-radius: 1em;
-  background: #f7f7f7;
+  background: #f0f0f0;
 }
 .education-body > .item.active:hover {
   filter: brightness(105%);
