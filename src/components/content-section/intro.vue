@@ -43,6 +43,12 @@
     const url = "https://drive.google.com/file/d/1RWbHvVRUVih2mNRGhglUFcS4wgaAF437/view?usp=sharing";
     window.open(url, "_blank");
   }
+  function udemy1() {
+    window.open('https://ude.my/UC-7257737f-91a3-40ec-8f0e-5e21f2a4e73e', '_blank');
+  }
+  function udemy2() {
+    window.open('https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0', '_blank');
+  }
   const copyNumber = async (value: any) => {
     try {
       await navigator.clipboard.writeText(value)
@@ -81,9 +87,19 @@
         <div class="data">{{ Object.values(item)[0] }}</div>
       </div>
     </div>
-    <div class="section-title">Education</div>
+    <div class="section-title">Certification</div>
     <div class="education-body">
-      <div class="item">
+      <div class="item active" @click="udemy1">
+        <div class="logo">
+          <img src="@/assets/img/logo/udemy.webp" alt="ubnhs">
+        </div>
+        <div class="name">
+          <div>React, Next.js and NodeJS</div>
+          <div>ude.my/UC-7257737f-91a3-40ec-8f0e-5e21f2a4e73e</div>
+        </div>
+        <div class="action">></div>
+      </div>
+      <div class="item active" @click="udemy2">
         <div class="logo">
           <img src="@/assets/img/logo/udemy.webp" alt="ubnhs">
         </div>
@@ -91,7 +107,11 @@
           <div>CSS, Bootstrap, Javascript</div>
           <div>ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0</div>
         </div>
+        <div class="action">></div>
       </div>
+    </div>
+    <div class="section-title">Education</div>
+    <div class="education-body">
       <div class="item">
         <div class="logo">
           <img src="@/assets/img/logo/tcu.webp" alt="logo">
@@ -108,15 +128,6 @@
         <div class="name">
           <div>Upper Bicutan National Highschool</div>
           <div>2008&ndash;2012</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="logo">
-          <img src="@/assets/img/logo/ubes.webp" alt="ubnhs">
-        </div>
-        <div class="name">
-          <div>Upper Bicutan Elementary School</div>
-          <div>2002&ndash;2008</div>
         </div>
       </div>
     </div>
@@ -215,6 +226,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  cursor: pointer;
 }
 .about-body > .item {
   display: flex;
@@ -240,12 +252,22 @@
   padding: 0.8em;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1em;
 }
 .education-body > .item {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  background: #f7f7f7;
+}
+.education-body > .item.active:hover {
+  filter: brightness(105%);
+  transform: scale(1.01);
+  box-shadow: 0.1em 0.1em 0.2em #0000002f;
+  cursor: pointer;
 }
 .education-body > .item > .logo {
   min-width: 3.5em;
@@ -264,10 +286,18 @@
 .education-body > .item > .name {
   display: flex;
   flex-direction: column;
+  justify-self: left;
+  width: 100%;
   font-size: 0.9em;
 }
 .education-body > .item > .name > div:nth-child(2) {
   font-size: 0.8em;
+  opacity: 0.5;
+}
+.education-body > .item > .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.5;
 }
 @media (orientation: landscape) {
@@ -306,6 +336,9 @@
     grid-template-columns: repeat(2, 50%);
     gap: 0.3em;
     padding: 1.5em;
+  }
+  .about-body:active {
+    transform: scale(1.02);
   }
   .education-body {
     display: grid;

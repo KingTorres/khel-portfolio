@@ -1,13 +1,13 @@
 <script setup lang="ts">
  function gotoMegabet() {
-    window.location.href = 'https://megabet-paradise.com/'
+    window.open('https://megabet-paradise.com/', '_blank');
  }
 </script>
 <template>
   <section id="project">
     <div class="section-title">Works</div>
     <div class="project-list">
-      <div class="list-item" @click="gotoMegabet">
+      <div class="list-item active" @click="gotoMegabet">
         <div class="logo">
           <img src="@/assets/img/logo/megabet_logo_single.webp" alt="megabet">
         </div>
@@ -59,8 +59,12 @@
   align-items: center;
   gap: 0.8em;
   background: #ffffff;
-  cursor: pointer;
   box-shadow: 0.1em 0.1em 0.2em #0000002f;
+}
+.list-item.active:hover {
+  transform: scale(1.02);
+  filter: brightness(105%);
+  cursor: pointer;
 }
 .list-item > .logo {
   width: 2.5em;
