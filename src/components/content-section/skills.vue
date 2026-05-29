@@ -58,14 +58,14 @@ const { width, height } = useWindowSize()
       <div class="item">
         <div class="icon">
           <img src="@/assets/img/logo/react.webp" alt="reactjs">
-          <div class="remarks">Entry</div>
+          <!-- <div class="remarks">Entry</div> -->
         </div>
         <div class="label">ReactJS</div>
       </div>
       <div class="item">
         <div class="icon">
           <img src="@/assets/img/logo/next.webp" alt="nextjs">
-          <div class="remarks">Entry</div>
+          <!-- <div class="remarks">Entry</div> -->
         </div>
         <div class="label">NextJS</div>
       </div>
