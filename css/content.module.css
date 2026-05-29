@@ -1,0 +1,35 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+section.section {
+  font-size: inherit;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.3em #00000065;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em;
+  background: var(--background-color);
+  scroll-margin-top: 10vh;
+}
+section.section.skill {
+  background: linear-gradient(45deg, #00086d, #962121);
+  padding-bottom: 0;
+}
+@media (orientation: landscape) {
+  .content {
+    width: 100%;
+  }
+  section.section {
+    border-radius: 1em;
+    font-size: 0.8em;
+    scroll-margin-top: 3vh;
+    padding: 1.5em 5em;
+  }
+}
