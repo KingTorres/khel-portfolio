@@ -1,0 +1,4 @@
+:HL["/khel-portfolio/_next/static/chunks/0akq-kifg-wi2.css","style"]
+:HC["/",""]
+:HL["/khel-portfolio/_next/static/chunks/03ukmky4k1s_u.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"HkcCMGOS7biBqDsyndwaP"}
