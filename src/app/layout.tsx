@@ -1,6 +1,9 @@
 // import type { Metadata } from "next";
 import "./globals.css";
 import "@/src/css/fontface.css";
+import Image from "next/image";
+
+import bodyBackground from "@/public/assets/img/abstract.jpg"
 import Nav from "@/src/components/nav"
 
 
@@ -22,6 +25,10 @@ export default function RootLayout({
           <Nav/>
           {children}
         </div>
+        
+          <div className="bodyBackground">
+            <Image src={bodyBackground} alt="background"/>
+          </div>
       </body>
     </html>
   );

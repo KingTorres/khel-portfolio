@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   overscroll-behavior: none;
   font-family: "poppins-regular";
-  background: #d8d8d8;
 }
 html {
   scroll-behavior: smooth;
@@ -44,6 +43,30 @@ button {
 }
 .app-body {
   font-size: calc((1vw + 1vh) * 1.4);
+}
+
+
+.bodyBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bodyBackground::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #00000013;
+}
+.bodyBackground > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .modalCard {
   background: var(--background-color);
