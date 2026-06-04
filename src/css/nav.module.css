@@ -13,7 +13,7 @@
   border-radius: 10em;
   box-shadow: 0.5em 0.4em .8em #00000056;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   border: 0.1em solid var(--accent-color);
 }
 .navigation::after {
