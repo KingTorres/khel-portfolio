@@ -86,7 +86,7 @@ button {
   font-size: inherit;
   font-weight: 400;
   border-radius: 2em;
-  color: var(--accent-color);
+  color: blue;
 }
 @media (orientation: landscape) {
   button:hover {
