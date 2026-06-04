@@ -63,6 +63,15 @@
   flex-direction: column;
   justify-content: center;
 }
+.listItem > .name > .title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.listItem > .name > .title > span {
+  font-size: 0.6em;
+  opacity: 0.5;
+}
 .listItem > .name > .subTitle {
   opacity: 0.5;
   font-size: 0.6em;

@@ -25,7 +25,7 @@ const Work = () => {
                     <Image src={megabetLogo} alt="megabet"/>
                 </div>
                 <div className={Styles.name}>
-                    <div className={Styles.title}>Megabet</div>
+                    <div className={Styles.title}>Megabet<span>(VueJS)</span></div>
                     <div className={Styles.subTitle}>Layout, Screen Responsiveness & Reactive.</div>
                 </div>
                 <div className={Styles.action}>{'>'}</div>
