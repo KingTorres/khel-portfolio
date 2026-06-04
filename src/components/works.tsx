@@ -55,13 +55,14 @@ const Work = () => {
         </div>
         {modal &&
             <div className={Styles.megabetDemo}>
-                <div className="modalCard">
+                <div className="modalCard animatePop">
                     <div className="modalHeader">
                         <div>Megabet Walkthrough</div>
                         <button onClick={modalHide}>CLOSE</button>
                     </div>
                     <div className="modalBody">
                         <iframe 
+                        className="animateFade"
                         src="https://www.youtube.com/embed/4Fx50rICEkE?si=RH32sciunTk1kcqq" 
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

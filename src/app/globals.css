@@ -151,3 +151,54 @@ button {
   }
 
 }
+.animatePop {
+    animation: animatePop 0.5s;
+    -webkit-animation: animatePop 0.5s;
+    -moz-animation: animatePop 0.5s;
+    -o-animation: animatePop 0.5s;
+    -ms-animation: animatePop 0.5s;
+}
+@keyframes animatePop {
+    0% {
+        transform: translateY(12px) scaleX(0) scaleY(0);
+    }
+
+    50% {
+        transform: translateY(12px) scaleX(1.05) scaleY(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes animateZoomOut {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.animateFade {
+    animation: animateFade 1s;
+    -webkit-animation: animateFade 1s;
+    -moz-animation: animateFade 1s;
+    -o-animation: animateFade 1s;
+    -ms-animation: animateFade 1s;
+}
+@keyframes animateFade {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    50% {
+      opacity: 0;
+      visibility: visible;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
