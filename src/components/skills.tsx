@@ -27,7 +27,7 @@ export function MultiSeriesRadar() {
         }}
         sx={{
         '& text, & .MuiChartsRadar-metricLabel': {
-          fill: '#ffffff7d !important'
+          fill: '#ffffffd7 !important'
         },
         '& .MuiRadarChart-gridDivider': {
             stroke: 'rgba(255, 255, 255, 0.74) !important'
@@ -108,10 +108,10 @@ const Skill = () => {
                 <div className={Styles.label}>css3</div>
             </div>
         </div>
-            <div className={Styles.sectionTitle}>Web Development Statistic</div>
-            <div className={Styles.chartWrapper}>
-                {MultiSeriesRadar()}
-             </div>
+        <div className={Styles.sectionTitle}>Web Development Statistic</div>
+        <div className={Styles.chartWrapper}>
+            {MultiSeriesRadar()}
+            </div>
         </>
 
     )

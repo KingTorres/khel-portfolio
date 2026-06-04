@@ -17,10 +17,33 @@ section.section {
   padding: 1em;
   background: var(--background-color);
   scroll-margin-top: 10vh;
+  position: relative;
+  overflow: hidden;
 }
 section.section.skill {
-  background: linear-gradient(45deg, #00086d, #962121);
+  background: transparent;
   padding-bottom: 0;
+}
+.sectionBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.sectionBackground::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #000000b7;
+}
+.sectionBackground > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @media (orientation: landscape) {
   .content {

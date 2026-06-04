@@ -11,6 +11,7 @@
   background: transparent;
   margin-top: 0.5em;
   color: var(--accent-color);
+  z-index: 1;
 }
 
 .sectionTitle::before {
@@ -35,6 +36,7 @@
   gap: 1em;
   color: #ffffff;
   background: linear-gradient(to bottom, #2323234d, #2f80dc4b);
+  z-index: 1;
 }
 .tools > .item {
   width: 100%;
@@ -74,6 +76,7 @@
   width: 80vw;
   height: 60vw;
   margin: auto;
+  z-index: 1;
 }
 @media (orientation: landscape) {
   .tools {
