@@ -1,0 +1,24 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    flex-direction: column;
+    opacity: 0.5;
+}
+.Footer > div:last-child {
+    font-size: 0.8em;
+}
+@media (orientation: landscape) {
+    .Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        flex-direction: row;
+        opacity: 0.5;
+    }
+    .Footer > div:last-child {
+        font-size: inherit;
+    }
+}

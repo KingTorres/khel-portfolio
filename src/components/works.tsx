@@ -26,7 +26,7 @@ const Work = () => {
                 </div>
                 <div className={Styles.name}>
                     <div className={Styles.title}>Megabet</div>
-                    <div className={Styles.subTitle}>Layout, Screen Responsiveness, Reactive.</div>
+                    <div className={Styles.subTitle}>Layout, Screen Responsiveness & Reactive.</div>
                 </div>
                 <div className={Styles.action}>{'>'}</div>
             </div>
@@ -53,12 +53,12 @@ const Work = () => {
             <div className={Styles.megabetDemo}>
                 <div className="modalCard">
                     <div className="modalHeader">
-                        <div>Megabet</div>
+                        <div>Megabet Walkthrough</div>
                         <button onClick={modalHide}>CLOSE</button>
                     </div>
                     <div className="modalBody">
                         <iframe 
-                        src="https://www.youtube.com/embed/RzoUd5w4w94?si=Nbd8xHl91ZaG76XV" 
+                        src="https://www.youtube.com/embed/4Fx50rICEkE?si=RH32sciunTk1kcqq" 
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 

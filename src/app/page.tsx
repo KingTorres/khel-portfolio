@@ -3,7 +3,7 @@ import Intro from "@/src/components/intro";
 import Works from "@/src/components/works";
 import Skills from "@/src/components/skills";
 import References from "@/src/components/references";
-
+import Footer from "@/src/components/footer"
 export default function Home() {
   return (
     <div className={Styles.content}>
@@ -16,8 +16,11 @@ export default function Home() {
       <section id="skills" className={`${Styles.section} ${Styles.skill}`}>
         <Skills/>
       </section>
-      <section id="references" className={Styles.section}>
+      <section className={Styles.section}>
         <References/>
+      </section>
+      <section  className={Styles.section}>
+        <Footer/>
       </section>
     </div>
   );
