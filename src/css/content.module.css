@@ -39,6 +39,7 @@ section.section.skill {
   left: 0;
   position: absolute;
   background: #000000b7;
+  background: linear-gradient(to right, rgba(1, 1, 76, 0.593), rgba(72, 1, 42, 0.642));
 }
 .sectionBackground > img {
   height: 100%;
