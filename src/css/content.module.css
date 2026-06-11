@@ -49,7 +49,7 @@ section.section.active > .sectionBackground {
     }
     100% {
         transform: scale(1);
-        filter: blur(0);
+        filter: blur(0.1em);
     }
 }
 .sectionBackground::after {
@@ -60,7 +60,7 @@ section.section.active > .sectionBackground {
   left: 0;
   position: absolute;
   background: #000000b7;
-  background: linear-gradient(to right, rgba(1, 1, 76, 0.593), rgba(72, 1, 42, 0.642));
+  background: linear-gradient(to right, rgba(0, 0, 55, 0.593), rgba(57, 0, 34, 0.642));
 }
 .sectionBackground > img {
   height: 100%;
@@ -76,5 +76,9 @@ section.section.active > .sectionBackground {
     font-size: 0.8em;
     scroll-margin-top: 3vh;
     padding: 1.5em 5em;
+  }
+  .sectionBackground > img {
+    width: 124%;
+    margin-left: -12%;
   }
 }
