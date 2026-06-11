@@ -5,28 +5,29 @@ import Works from "@/src/components/works";
 import Skills from "@/src/components/skills";
 import References from "@/src/components/references";
 import Footer from "@/src/components/footer"
+import SectionObserver from '@/src/components/sectionObserver';
 import skillCover from "@/public/assets/img/coverPhoto.jpg"
 export default function Home() {
   return (
     <div className={Styles.content}>
-      <section id="intro" className={Styles.section}>
+      <SectionObserver id="intro" classname={Styles.section}>
         <Intro/>
-      </section>
-      <section id="works" className={Styles.section}>
+      </SectionObserver>
+      <SectionObserver id="works" classname={Styles.section}>
         <Works/>
-      </section>
-      <section id="skills" className={`${Styles.section} ${Styles.skill}`}>
+      </SectionObserver>
+      <SectionObserver id="skills" classname={`${Styles.section} ${Styles.skill}`} activeClassName={Styles.active}>
         <Skills/>
         <div className={Styles.sectionBackground}>
           <Image src={skillCover} alt="background"/>
         </div>
-      </section>
-      <section className={Styles.section}>
+      </SectionObserver>
+      <SectionObserver id="references" classname={Styles.section}>
         <References/>
-      </section>
-      <section  className={Styles.section}>
+      </SectionObserver>
+      <SectionObserver id="footer" classname={Styles.section}>
         <Footer/>
-      </section>
+      </SectionObserver>
     </div>
   );
 }

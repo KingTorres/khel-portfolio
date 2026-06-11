@@ -45,12 +45,11 @@
 }
 .navigation > button.active {
   filter: none;
-
-    animation: scalein 0.5s ease forwards;
-    -webkit-animation: scalein 0.5s ease forwards;
-    -moz-animation: scalein 0.5s ease forwards;
-    -o-animation: scalein 0.5s ease forwards;
-    -ms-animation: scalein 0.5s ease forwards;
+  animation: scalein 0.5s ease forwards;
+  -webkit-animation: scalein 0.5s ease forwards;
+  -moz-animation: scalein 0.5s ease forwards;
+  -o-animation: scalein 0.5s ease forwards;
+  -ms-animation: scalein 0.5s ease forwards;
 }
 @keyframes scalein {
     0% {

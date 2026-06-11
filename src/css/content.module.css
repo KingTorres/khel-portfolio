@@ -30,6 +30,27 @@ section.section.skill {
   width: 100%;
   top: 0;
   left: 0;
+  transform: scale(1.5);
+  filter: blur(1em);
+}
+
+section.section.active > .sectionBackground {
+  animation: backgroundScale 1.5s ease forwards;
+  -webkit-animation: backgroundScale 1.5s ease forwards;
+  -moz-animation: backgroundScale 1.5s ease forwards;
+  -o-animation: backgroundScale 1.5s ease forwards;
+  -ms-animation: backgroundScale 1.5s ease forwards;
+}
+
+@keyframes backgroundScale {
+    0% {
+        transform: scale(1.5);
+        filter: blur(1em);
+    }
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+    }
 }
 .sectionBackground::after {
   content: '';
