@@ -35,14 +35,21 @@ section.section.skill {
 }
 
 section.section.active > .sectionBackground {
-  animation: backgroundScale 1.5s ease forwards;
-  -webkit-animation: backgroundScale 1.5s ease forwards;
-  -moz-animation: backgroundScale 1.5s ease forwards;
-  -o-animation: backgroundScale 1.5s ease forwards;
-  -ms-animation: backgroundScale 1.5s ease forwards;
+  animation: backgroundScaleOut 1.5s ease forwards;
+  -webkit-animation: backgroundScaleOut 1.5s ease forwards;
+  -moz-animation: backgroundScaleOut 1.5s ease forwards;
+  -o-animation: backgroundScaleOut 1.5s ease forwards;
+  -ms-animation: backgroundScaleOut 1.5s ease forwards;
+}
+section.section.inactive > .sectionBackground {
+  animation: backgroundScaleIn 1.5s ease forwards;
+  -webkit-animation: backgroundScaleIn 1.5s ease forwards;
+  -moz-animation: backgroundScaleIn 1.5s ease forwards;
+  -o-animation: backgroundScaleIn 1.5s ease forwards;
+  -ms-animation: backgroundScaleIn 1.5s ease forwards;
 }
 
-@keyframes backgroundScale {
+@keyframes backgroundScaleOut {
     0% {
         transform: scale(1.5);
         filter: blur(1em);
@@ -50,6 +57,16 @@ section.section.active > .sectionBackground {
     100% {
         transform: scale(1);
         filter: blur(0.1em);
+    }
+}
+@keyframes backgroundScaleIn {
+    0% {
+        transform: scale(1);
+        filter: blur(0.1em);
+    }
+    100% {
+        transform: scale(1.5);
+        filter: blur(1em);
     }
 }
 .sectionBackground::after {

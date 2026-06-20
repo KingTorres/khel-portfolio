@@ -16,7 +16,7 @@ export default function Home() {
       <SectionObserver id="works" classname={Styles.section}>
         <Works/>
       </SectionObserver>
-      <SectionObserver id="skills" classname={`${Styles.section} ${Styles.skill}`} activeClassName={Styles.active}>
+      <SectionObserver id="skills" classname={`${Styles.section} ${Styles.skill}`} activeClassName={Styles.active} inactiveClassName={Styles.inactive}>
         <Skills/>
         <div className={Styles.sectionBackground}>
           <Image src={skillCover} alt="background"/>

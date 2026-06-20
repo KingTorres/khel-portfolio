@@ -7,10 +7,11 @@ interface sectionObserverType {
     id: string,
     children: React.ReactNode,
     classname?: string,
-    activeClassName?: string
+    activeClassName?: string,
+    inactiveClassName?: string
 }
 
-export default function SectionObserver({ id, children, classname = '', activeClassName = '' }: sectionObserverType) {
+export default function SectionObserver({ id, children, classname = '', activeClassName = '', inactiveClassName= '' }: sectionObserverType) {
   const dispatch = useDispatch();
   const sectionRef = useRef<HTMLElement | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -22,7 +23,7 @@ export default function SectionObserver({ id, children, classname = '', activeCl
           dispatch(setSection(id));
           setIsActive(true);
         } else {
-        //   setIsActive(false);
+          setIsActive(false);
         }
       },
       { 
@@ -36,7 +37,7 @@ export default function SectionObserver({ id, children, classname = '', activeCl
 
     return () => observer.disconnect();
   }, [id, dispatch]);
-  const combinedClassName = `${classname} ${isActive && activeClassName}`.trim();
+  const combinedClassName = `${classname} ${isActive ? activeClassName : inactiveClassName}`.trim();
 
   return (
     <section id={id} ref={sectionRef} className={combinedClassName}>
