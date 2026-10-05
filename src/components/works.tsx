@@ -4,12 +4,16 @@ import Styles from "@/src/css/works.module.css"
 import Image from "next/image";
 
 // Images
+import reactLogo from "@/public/assets/img/logo/react.webp"
 import megabetLogo from "@/public/assets/img/logo/megabet_logo_single.webp"
 import cgmLogo from "@/public/assets/img/logo/cgm.webp"
 import asiatypeLogo from "@/public/assets/img/logo/asiatype.webp"
 
 function gotoMegabet() {
     window.open('https://megabet-paradise.com/', '_blank');
+}
+function gotoEcommerce() {
+    window.open('https://kingtorres.github.io/ecommerce/', '_blank');
 }
 const Work = () => {
     
@@ -24,6 +28,16 @@ const Work = () => {
         <>
         <div className={Styles.sectionTitle}>Works</div>
         <div className={Styles.projectList}>
+            <div className={`${Styles.listItem} ${Styles.active}`} onClick={gotoEcommerce}>
+                <div className={Styles.logo}>
+                    <Image src={reactLogo} alt="reactJS"/>
+                </div>
+                <div className={Styles.name}>
+                    <div className={Styles.title}>Khel's Store<span>(ReactJS)</span></div>
+                    <div className={Styles.subTitle}>E-Commerce, API's, React, Redux, Tailwind.</div>
+                </div>
+                <div className={Styles.action}>{'>'}</div>
+            </div>
             <div className={`${Styles.listItem} ${Styles.active}`} onClick={modalShow}>
                 <div className={Styles.logo}>
                     <Image src={megabetLogo} alt="megabet"/>
