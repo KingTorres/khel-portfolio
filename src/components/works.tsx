@@ -84,7 +84,7 @@ const Work = () => {
                         allowFullScreen
                     ></iframe>
                     </div>
-                    <div className="modalFooter">Project link: <button onClick={gotoMegabet}>Megabet Website</button></div>
+                    <div className="modalFooter">Project link: <button>Megabet Website</button></div>
                 </div>
             </div>
         }
